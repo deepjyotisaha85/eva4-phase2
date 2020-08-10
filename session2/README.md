@@ -25,7 +25,7 @@ Once we had cleaned dataset, we started working on model. But before building ou
 
 The code used for this is shown below
 
-![preprocess image](Images/preprocess.png?raw=true)
+![preprocess image](images/preprocess.png?raw=true)
 
 #### Model 
 
