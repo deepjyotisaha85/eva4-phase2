@@ -25,7 +25,7 @@ Once we had cleaned dataset, we started working on model. But before building ou
 
 The code used for this is shown below
 
-![preprocess image](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/preprocess.png?raw=true)
+![preprocess image](Images/preprocess.png?raw=true)
 
 #### Model 
 
