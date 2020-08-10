@@ -25,13 +25,13 @@ Once we had cleaned dataset, we started working on model. But before building ou
 
 The code used for this is shown below
 
-![preprocess image](images/preprocess.png?raw=true)
+![preprocess image](images/preprocess.png)
 
 #### Model 
 
 We used MobileNet model with only the last classifier layer changed to predict 4 classes instead of 1000 it was trained on. We fixed the weights of all layers except for last classifier layer. To achieve this, we built a custom model using following code
 
-![Model](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/model.png?raw=true)
+![Model](images/model.png)
 
 #### Training
 
@@ -39,23 +39,18 @@ We started with finding the highest learning that could be used using LRFinder. 
 
 We chose 2e-3 as the highest learning rate in line with the plot shown above. 
 We used OneCycle training policy to train our model. The training and validation plots vs epoch could be seen below:
-![train curve](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/training_curves.png?raw=true)
+![train curve](images/training_curves.png)
 
 #### Post Training Diagnostics
 
 Confusion matrix of our testing data
-![confusion_matrix](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/confusion_matrix.png?raw=true)
-
+![confusion_matrix](images/confusion_matrix.png)
 Misclassified images for Flying Birds
-![confusion_matrix](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/error_images_flying_birds.png?raw=true)
-
+![confusion_matrix](images/error_images_flying_birds.png)
 Misclassified images from Large QuadCopters
-![confusion_matrix](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/error_images_large_quadcopters.png?raw=true)
-
+![confusion_matrix](images/error_images_large_quadcopters.png)
 Misclassified images from Small QuadCopters
-![confusion_matrix](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/error_images_small_quadcopters.png?raw=true)
-
-
+![confusion_matrix](images/error_images_small_quadcopters.png)
 Misclassified images from Winged Drones
-![confusion_matrix](https://github.com/rishubhkhurana/CodeRepository/blob/sess2/S2/Images/error_images_winged_drones.png?raw=true)
+![confusion_matrix](images/error_images_winged_drones.png)
 
